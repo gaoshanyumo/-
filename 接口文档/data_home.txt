@@ -1,0 +1,28 @@
+接口信息
+    接口地址    /data/home
+    请求方式    GET
+    数据格式    application/json
+    编码等等
+
+请求数据
+    query
+        num:number     数量
+    如果是post请求，有data数据
+    data
+        type:number     分类id
+
+响应数据
+    {
+        ad:Array    广告数据
+            [
+                {       每一个成员代表一个广告数据对象
+                    title:String           广告标题
+                    description:String     广告描述
+                    _id:String             广告id
+                    url:String             广告图片地址
+                    product:String         商品的id
+                }
+            ]
+        list:Array   商品数据
+            ....
+    }
